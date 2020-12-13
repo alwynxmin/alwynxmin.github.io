@@ -2,8 +2,9 @@
 ---
 
 $text-color: #46433A;
-$anchor-text-color: #CE534D;
-$background-color: #F1EED9;
+$anchor-text-color: #344c6c;
+$anchor-text-hover: #94a4b4;
+$background-color: #e9e0d6;
 
 @font-face{
 	font-family: 'Naive Bold';
@@ -42,10 +43,12 @@ a:hover,
 a:active {
 	color: $anchor-text-color;
 	text-decoration: none;
+	font-weight: bolder;
 }
 
 a:hover {
-	text-decoration: underline;
+	color: $anchor-text-hover;
+	text-decoration: none;
 }
 
 .location {
