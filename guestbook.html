@@ -1,0 +1,32 @@
+---
+layout: base
+---
+<script>
+(function () {
+  const url = 'https://api.sheety.co/ab29ac068193d47c3342f1b4707376f3/rsvpResponses/guestbook';
+  fetch(url)
+    .then((response) => response.json())
+    .then(({ guestbook }) => {
+      const entries = guestbook.map((v, i) => {
+        const entry = document.createElement('div')
+        entry.setAttribute('class', 'guest-entry')
+        const name = document.createElement('div')
+        name.setAttribute('class', 'guest-name')
+        name.innerText = v.yourName
+        const message = document.createElement('div')
+        message.setAttribute('class', 'guest-message')
+        message.innerText = v['leaveUsAMessageForOurEGuestbook! :)']
+        entry.appendChild(name)
+        entry.appendChild(message)
+        return entry
+      })
+      const gb = document.getElementById('guestbook')
+      entries.forEach((e) => {
+        gb.appendChild(e)
+        gb.appendChild(document.createElement('hr'))
+      })
+    })
+})()
+</script>
+<h2>Guestbook</h2>
+<div id="guestbook" class="guestbook"/>

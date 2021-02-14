@@ -161,6 +161,27 @@ footer {
 	main {
 		width: 46%;
 		margin-left: 54%;
-		padding: 0;
-	}
+        padding: 0;
+    }
+}
+
+
+.guest-entry {
+    .guest-name::before {
+        content: "Name";
+        font-weight: 900;
+        font-style: oblique;
+        display: block;
+    }
+
+    .guest-message::before {
+        padding-top: 0.5rem;
+        content: "Message";
+        font-weight: 900;
+        font-style: oblique;
+        display: block;
+    }
+
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
