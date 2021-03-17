@@ -24,3 +24,5 @@ highlighter: rouge
 
 # Permalinks
 permalink: pretty
+
+include: [_redirects]
