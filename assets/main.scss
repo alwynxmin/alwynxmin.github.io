@@ -167,21 +167,30 @@ footer {
 
 
 .guest-entry {
-    .guest-name::before {
-        content: "Name";
+    /** .guest-name::before {
+        content: "Name"; 
         font-weight: 900;
         font-style: oblique;
         display: block;
+    } **/
+	
+    .guest-name {
+    font-weight: bolder;
+    display: block;
+    font-size: smaller;
+    font-family: 'Franklin Gothic URW', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
     }
 
     .guest-message::before {
         padding-top: 0.5rem;
-        content: "Message";
+        content: "—";
         font-weight: 900;
         font-style: oblique;
         display: block;
     }
 
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem;
+    margin: 1rem 0 1rem 0;
 }
