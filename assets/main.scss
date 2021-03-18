@@ -177,10 +177,12 @@ footer {
     }
 
     .guest-message::before {
-        padding-right: 0.3rem;
+        // pad left so that it transforms to the right
+        padding-left: 0.3rem;
         content: "💬";
         font-weight: 900;
-	    font-size: 1.5rem;
+        font-size: 1.5rem;
+        display: inline-block;
         transform: scale(-1, 1);
     }
 
