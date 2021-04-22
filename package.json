@@ -1,0 +1,22 @@
+{
+  "name": "alwynxmin.github.io",
+  "version": "1.0.0",
+  "description": "Compass is a Jekyll theme designed with something very specific in mind: to be a simple and elegant personal landing page that can be easily deployed to [GitHub Pages](https://pages.github.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alwynxmin/alwynxmin.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alwynxmin/alwynxmin.github.io/issues"
+  },
+  "homepage": "https://github.com/alwynxmin/alwynxmin.github.io#readme",
+  "dependencies": {
+    "got": "^11.8.2"
+  }
+}
