@@ -9,3 +9,22 @@
 </div>
 
 <hr>
+<form id="lookup">
+  <input id="name" type="text"></input><button type="submit">Lookup</button>
+</form>
+
+<div id="seating"/>
+
+<script>
+  document.getElementById('lookup').onsubmit = async (event) => {
+    event.preventDefault()
+    const name = document.getElementById('name').value
+    const response = await fetch(`/.netlify/functions/guests?name=${name}`)
+      .then(response => response.json())
+    if (response.message) {
+      document.getElementById('seating').innerText = response.message
+    } else {
+      document.getElementById('seating').innerText = `Church Pew: ${response.pew} | Lunch Table: ${response.table}`
+    }
+  }
+</script>
