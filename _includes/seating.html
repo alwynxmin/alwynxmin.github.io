@@ -13,7 +13,9 @@
   <input id="name" type="text" placeholder="Find your seat by name"></input><button type="submit">Lookup</button>
 </form>
 
-<div id="seating"/>
+<div id="seating">
+  Lookup your seat by name, with the form above
+</div>
 
 <script>
   document.getElementById('lookup').onsubmit = async (event) => {
@@ -26,7 +28,7 @@
     if (response.message) {
       document.getElementById('seating').innerText = response.message
     } else {
-      document.getElementById('seating').innerText = `Church Pew: ${response.pew} | Lunch Table: ${response.table}`
+      document.getElementById('seating').innerText = `Church Pew: ${response.pew}\nLunch Table: ${response.table}`
     }
   }
 </script>
