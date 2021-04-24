@@ -190,3 +190,21 @@ footer {
     padding: 0.75rem;
     margin: 1rem 0 1rem 0;
 }
+
+form#lookup {
+    margin: 5vh;
+    align-self: center;
+
+    input#name {
+        width: 75%;
+    }
+
+    button {
+        width: 22%;
+    }
+}
+
+#seating {
+    margin-bottom: 5vh;
+    text-align: center;
+}
