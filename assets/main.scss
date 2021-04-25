@@ -192,11 +192,15 @@ footer {
 }
 
 form#lookup {
-    margin: 5vh;
-    align-self: center;
+    // margin: 5vh;
+    // align-self: left;
 
     input#name {
         width: 65%;
+	text-align: left;
+	margin-right: 5px;
+	padding: 5px;
+	font-size: 0.9rem;
     }
 }
 
