@@ -194,7 +194,9 @@ footer {
 form#lookup {
     // margin: 5vh;
     // align-self: left;
-
+    input {
+	padding: 5px;
+    }
     input#name {
         width: 65%;
 	text-align: left;
@@ -202,6 +204,11 @@ form#lookup {
 	padding: 5px;
 	font-size: 0.9rem;
     }
+	
+    button {
+	 padding: 4px;
+    }
+	
 }
 
 #seating {
